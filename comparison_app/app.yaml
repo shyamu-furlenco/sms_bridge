@@ -1,0 +1,7 @@
+command: ["sh", "-c", "streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true"]
+
+env:
+  - name: DATABRICKS_HOST
+    value: "https://dbc-c35c1c4c-58ed.cloud.databricks.com"
+  - name: DATABRICKS_HTTP_PATH
+    value: "/sql/1.0/warehouses/19afafffa353216f"

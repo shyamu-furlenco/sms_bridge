@@ -1,6 +1,5 @@
 %sql
 
-create table furlenco_analytics.user_defined_tables.feb_snapshot_noida as 
 
 WITH all_snapshots AS (
   SELECT
@@ -119,4 +118,6 @@ FROM final_output
 WHERE 1=1
 AND period_end >= '2026-02-01'
 AND activation_date < '2026-03-01'
+
+
 
